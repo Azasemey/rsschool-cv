@@ -24,3 +24,17 @@ I work as a content manager at epiccarry.com remotely. I have experience using W
 Basic knowledge of HTML / CSS. Also solving tasks on [CodeWars](https://www.codewars.com/users/Azasemey/) level **7-6 kyu**. I try to stick to the **DRY** principles.
 
 ---
+
+**_Code example_**
+
+```javascript
+function spinWords(string) {
+  const str = string.split(" ");
+  const spinned = str.map((v) =>
+    v.length > 4 ? (v = v.split("").reverse().join("")) : (v = v)
+  );
+  return spinned.join(" ");
+}
+```
+
+---
