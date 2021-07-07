@@ -38,3 +38,8 @@ function spinWords(string) {
 ```
 
 ---
+
+**_Languages_**
+
+- Russian (native)
+- English level - C2. [EF SET certificate](https://www.efset.org/cert/NQhhXd). But my speaking skill is not that high as listening / reading /writing.
