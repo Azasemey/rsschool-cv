@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/styles/default.min.css"
+    />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/highlight.min.js"></script>
+    <title>CV</title>
+  </head>
+  <body>
+    <header class="header container">
+      <!-- <div class="container"> -->
+      <nav class="nav">
+        <h1>Molbayev Azamat</h1>
+        <ul class="nav-links">
+          <li class="nav-item">
+            <a class="nav-link" href="#about" title="About">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills" title="Skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#languages" title="Language">Languages</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#code" title="Code">Code</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- </div> -->
+    </header>
+    <main class="container">
+      <section class="main-block">
+        <div class="intro">
+          <img class="avatar" src="img/avatar.jpg" alt="Me" />
+          <h2 class="author">Molbayev Azamat</h2>
+          <p class="prof">Front-end Developer</p>
+          <ul class="nav-icons">
+            <li class="nav-icon">
+              <a class="socials" href="#" title="Telegram" target="_blank"
+                ><i class="lni lni-telegram-original"></i
+              ></a>
+            </li>
+            <li class="nav-icon">
+              <a class="socials" href="#" title="Discord" target="_blank"
+                ><i class="lni lni-discord"></i
+              ></a>
+            </li>
+            <li class="nav-icon">
+              <a class="socials" href="#" title="GitHub" target="_blank"
+                ><i class="lni lni-github-original"></i
+              ></a>
+            </li>
+          </ul>
+          <a class="btn btn-contact" href="#contacts">Contacts</a>
+        </div>
+      </section>
+      <section class="about" id="about">
+        <div class="about-left">
+          <h2 class="other-h2">About me</h2>
+          <p data-aos="zoom-in">
+            Hi! My name is Azamat and my goal is to become a confident front-end
+            developer.<br />
+            Right now i work as a content manager at epiccarry.com remotely.<br />
+            For some time I worked closely with the developers and I liked what
+            they do.<br />
+            I'm spending all my spare time learning HTML / CSS / JS
+          </p>
+        </div>
+        <div class="about-right">
+          <h2 class="other-h2">Languages</h2>
+          <div class="langs" data-aos="zoom-in">
+            <p>Russian - <b>native</b>.</p>
+            <p>Kazakh - <b>Intermediate</b>.</p>
+            <p>
+              English - <b>C2</b>, according to
+              <a
+                class="links"
+                href="https://www.efset.org/cert/NQhhXd"
+                title="EF SET certificate"
+                target="_blank"
+                >EF SET certificate</a
+              >.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="skills" id="skills">
+        <h2 class="other-h2">Professional Skills</h2>
+        <div class="skill-boxes">
+          <div class="left-skills" data-aos="fade-right">
+            <span>HTML</span>
+            <div class="progress-in">
+              <div class="progress-out" id="html-progress">
+                <span class="progress-text">Medium</span>
+              </div>
+            </div>
+            <span>CSS</span>
+            <div class="progress-in">
+              <div class="progress-out" id="css-progress">
+                <span class="progress-text">Medium</span>
+              </div>
+            </div>
+            <span>JavaScript</span>
+            <div class="progress-in">
+              <div class="progress-out" id="js-progress">
+                <span class="progress-text">Medium</span>
+              </div>
+            </div>
+          </div>
+          <div class="right-skills" data-aos="fade-left">
+            <span>WordPress</span>
+            <div class="progress-in">
+              <div class="progress-out" id="wp-progress">
+                <span class="progress-text">Advanced</span>
+              </div>
+            </div>
+            <span>Adobe Photoshop</span>
+            <div class="progress-in">
+              <div class="progress-out" id="ps-progress">
+                <span class="progress-text">Advanced</span>
+              </div>
+            </div>
+            <span>Adobe Premiere</span>
+            <div class="progress-in">
+              <div class="progress-out" id="pr-progress">
+                <span class="progress-text">Medium</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="code" id="code">
+        <h2 class="other-h2">Code Example</h2>
+        <div class="code-style" data-aos="zoom-in">
+          <pre>
+            <code class="language-js">
+function spinWords(string) {
+  const str = string.split(" ");
+  const spinned = str.map((v) =>
+  v.length > 4 ? (v = v.split("")
+  .reverse()
+  .join("")) : (v = v));
+  return spinned.join(" ");
+}            </code>
+          </pre>
+        </div>
+      </section>
+      <section class="contacts" id="contacts">
+        <h2 class="other-h2">Contacts</h2>
+        <table data-aos="zoom-in">
+          <tr>
+            <td>Email:</td>
+            <td>
+              <a
+                class="links"
+                href="mailto:azasemey@gmail.com"
+                title="Email"
+                target="_blank"
+                >azasemey@gmail.com</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>Discord:</td>
+            <td>
+              <a
+                class="links"
+                href="https://discordapp.com/users/863041297123639316"
+                title="Discord"
+                target="_blank"
+                >Azasemey#9739</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>Telegram:</td>
+            <td>
+              <a
+                class="links"
+                href="https://t.me/azasemey"
+                title="Telegram"
+                target="_blank"
+                >@azasemey</a
+              >
+            </td>
+          </tr>
+        </table>
+      </section>
+    </main>
+    <footer class="footer container">
+      <a href="https://rs.school/js/" target="_blank"
+        ><img src="img/rs_school_js.svg" alt="rs-logo" width="150"
+      /></a>
+      <span>2021</span>
+      <a
+        href="https://github.com/Azasemey/"
+        title="GitHub profile"
+        target="_blank"
+        >GitHub</a
+      >
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
+</html>
