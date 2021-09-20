@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
     <link
       rel="stylesheet"
       href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/styles/default.min.css"
@@ -87,6 +89,69 @@
         </g>
       </symbol>
     </svg>
+    <div class="burger">
+      <input type="checkbox" class="burger__checkbox" id="burger-toggle" />
+      <label for="burger-toggle" class="burger__button">
+        <span class="burger__icon">&nbsp;</span>
+      </label>
+      <div class="burger__background">&nbsp;</div>
+      <div class="burger__nav">
+        <div class="burger__nav-wrapper">
+          <div>
+            <h1>Azamat Molbayev</h1>
+            <p>Front-End Developer</p>
+            <div class="icons">
+              <a
+                href="https://github.com/Azasemey/"
+                class="social-link"
+                target="_blank"
+              >
+                <svg class="social-icon">
+                  <use xlink:href="#github"></use>
+                </svg>
+              </a>
+              <a
+                href="https://t.me/azasemey"
+                class="social-link"
+                target="_blank"
+              >
+                <svg class="social-icon">
+                  <use xlink:href="#telegram"></use>
+                </svg>
+              </a>
+              <a
+                href="https://discordapp.com/users/863041297123639316"
+                class="social-link"
+                target="_blank"
+              >
+                <svg class="social-icon">
+                  <use xlink:href="#discord"></use>
+                </svg>
+              </a>
+              <a
+                href="mailto:azasemey@gmail.com"
+                class="social-link"
+                target="_blank"
+              >
+                <svg class="social-icon">
+                  <use xlink:href="#email"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <nav class="nav">
+            <ul class="nav-links">
+              <li class="nav-link"><a href="#about">About Me</a></li>
+              <li class="nav-link"><a href="#skills">Skills</a></li>
+              <li class="nav-link"><a href="#lang">Languages</a></li>
+              <li class="nav-link"><a href="#projects">Projects</a></li>
+              <li class="nav-link"><a href="#code">Code</a></li>
+              <li class="nav-link"><a href="#contact">Contacts</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
     <main class="container">
       <header class="header">
         <img class="img-profile" src="img/avatar.jpg" alt="author" />
@@ -133,6 +198,7 @@
             <li class="nav-link"><a href="#about">About Me</a></li>
             <li class="nav-link"><a href="#skills">Skills</a></li>
             <li class="nav-link"><a href="#lang">Languages</a></li>
+            <li class="nav-link"><a href="#projects">Projects</a></li>
             <li class="nav-link"><a href="#code">Code</a></li>
             <li class="nav-link"><a href="#contact">Contacts</a></li>
           </ul>
@@ -169,6 +235,14 @@
               <li><div class="progress pr-80">Advanced</div></li>
             </ul>
           </div>
+          <div class="mob-skills">
+            <ul>
+              <li><div class="progress pr-50">HTML / CSS / JS</div></li>
+              <li><div class="progress pr-85">Wordpress</div></li>
+              <li><div class="progress pr-90">Adobe Photoshop</div></li>
+              <li><div class="progress pr-80">Adobe Premiere</div></li>
+            </ul>
+          </div>
         </div>
         <hr />
         <h2 class="main-titles" id="lang">Languages</h2>
@@ -186,6 +260,58 @@
               <li><div class="progress pr-50">Intermediate</div></li>
               <li><div class="progress pr-80">Upper-Intermediate (B2)</div></li>
             </ul>
+          </div>
+          <div class="mob-skills">
+            <ul>
+              <li><div class="progress">Russian - Native</div></li>
+              <li><div class="progress pr-50">Kazakh - Intermediate</div></li>
+              <li>
+                <div class="progress pr-80">English - B2</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <h2 class="main-titles" id="projects">Projects</h2>
+        <div class="projects">
+          <div class="projects__box">
+            <a
+              href="https://rolling-scopes-school.github.io/azasemey-JSFEPRESCHOOL/museum"
+              target="_blank"
+              ><img
+                src="img/projects/museum.jpg"
+                alt="museum"
+                class="projects__box__image"
+              />
+              <br />
+              <span>Museum</span></a
+            >
+          </div>
+          <div class="projects__box">
+            <a
+              href="https://azasemey.github.io/custom-video-player/#"
+              target="_blank"
+              ><img
+                src="img/projects/player.jpg"
+                alt="player"
+                class="projects__box__image"
+              />
+              <br />
+              <span>Media Player</span></a
+            >
+          </div>
+          <div class="projects__box">
+            <a
+              href="https://rolling-scopes-school.github.io/azasemey-JSFEPRESCHOOL/vertical-slider/"
+              target="_blank"
+              ><img
+                src="img/projects/slider.jpg"
+                alt="museum"
+                class="projects__box__image"
+              />
+              <br />
+              <span>Infinite Slider</span></a
+            >
           </div>
         </div>
         <hr />
@@ -225,6 +351,7 @@ const generateColor = function () {
           </ul>
         </div>
         <hr />
+
         <footer class="footer">
           <div class="logo">
             <a href="https://rs.school/js/" class="f-link" target="_blank">
