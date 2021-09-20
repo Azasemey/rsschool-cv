@@ -1,225 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="style.css" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap"
-      rel="stylesheet"
-    />
-    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link
-      rel="stylesheet"
-      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/styles/default.min.css"
-    />
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/highlight.min.js"></script>
-    <title>CV</title>
-  </head>
-  <body>
-    <header class="header container">
-      <!-- <div class="container"> -->
-      <nav class="nav">
-        <h1>Molbayev Azamat</h1>
-        <ul class="nav-links">
-          <li class="nav-item">
-            <a class="nav-link" href="#about" title="About">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#skills" title="Skills">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#languages" title="Language">Languages</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#code" title="Code">Code</a>
-          </li>
-        </ul>
-      </nav>
-
-      <!-- </div> -->
-    </header>
-    <main class="container">
-      <section class="main-block">
-        <div class="intro">
-          <img class="avatar" src="img/avatar.jpg" alt="Me" />
-          <h2 class="author">Molbayev Azamat</h2>
-          <p class="prof">Front-end Developer</p>
-          <ul class="nav-icons">
-            <li class="nav-icon">
-              <a class="socials" href="#" title="Telegram" target="_blank"
-                ><i class="lni lni-telegram-original"></i
-              ></a>
-            </li>
-            <li class="nav-icon">
-              <a class="socials" href="#" title="Discord" target="_blank"
-                ><i class="lni lni-discord"></i
-              ></a>
-            </li>
-            <li class="nav-icon">
-              <a class="socials" href="#" title="GitHub" target="_blank"
-                ><i class="lni lni-github-original"></i
-              ></a>
-            </li>
-          </ul>
-          <a class="btn btn-contact" href="#contacts">Contacts</a>
-        </div>
-      </section>
-      <section class="about" id="about">
-        <div class="about-left">
-          <h2 class="other-h2">About me</h2>
-          <p data-aos="zoom-in">
-            Hi! My name is Azamat and my goal is to become a confident front-end
-            developer.<br />
-            Right now i work as a content manager at epiccarry.com remotely.<br />
-            For some time I worked closely with the developers and I liked what
-            they do.<br />
-            I'm spending all my spare time learning HTML / CSS / JS
-          </p>
-        </div>
-        <div class="about-right">
-          <h2 class="other-h2">Languages</h2>
-          <div class="langs" data-aos="zoom-in">
-            <p>Russian - <b>native</b>.</p>
-            <p>Kazakh - <b>Intermediate</b>.</p>
-            <p>
-              English - <b>C2</b>, according to
-              <a
-                class="links"
-                href="https://www.efset.org/cert/NQhhXd"
-                title="EF SET certificate"
-                target="_blank"
-                >EF SET certificate</a
-              >.
-            </p>
-          </div>
-        </div>
-      </section>
-      <section class="skills" id="skills">
-        <h2 class="other-h2">Professional Skills</h2>
-        <div class="skill-boxes">
-          <div class="left-skills" data-aos="fade-right">
-            <span>HTML</span>
-            <div class="progress-in">
-              <div class="progress-out" id="html-progress">
-                <span class="progress-text">Medium</span>
-              </div>
-            </div>
-            <span>CSS</span>
-            <div class="progress-in">
-              <div class="progress-out" id="css-progress">
-                <span class="progress-text">Medium</span>
-              </div>
-            </div>
-            <span>JavaScript</span>
-            <div class="progress-in">
-              <div class="progress-out" id="js-progress">
-                <span class="progress-text">Medium</span>
-              </div>
-            </div>
-          </div>
-          <div class="right-skills" data-aos="fade-left">
-            <span>WordPress</span>
-            <div class="progress-in">
-              <div class="progress-out" id="wp-progress">
-                <span class="progress-text">Advanced</span>
-              </div>
-            </div>
-            <span>Adobe Photoshop</span>
-            <div class="progress-in">
-              <div class="progress-out" id="ps-progress">
-                <span class="progress-text">Advanced</span>
-              </div>
-            </div>
-            <span>Adobe Premiere</span>
-            <div class="progress-in">
-              <div class="progress-out" id="pr-progress">
-                <span class="progress-text">Medium</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="code" id="code">
-        <h2 class="other-h2">Code Example</h2>
-        <div class="code-style" data-aos="zoom-in">
-          <pre>
-            <code class="language-js">
-function spinWords(string) {
-  const str = string.split(" ");
-  const spinned = str.map((v) =>
-  v.length > 4 ? (v = v.split("")
-  .reverse()
-  .join("")) : (v = v));
-  return spinned.join(" ");
-}            </code>
-          </pre>
-        </div>
-      </section>
-      <section class="contacts" id="contacts">
-        <h2 class="other-h2">Contacts</h2>
-        <table data-aos="zoom-in">
-          <tr>
-            <td>Email:</td>
-            <td>
-              <a
-                class="links"
-                href="mailto:azasemey@gmail.com"
-                title="Email"
-                target="_blank"
-                >azasemey@gmail.com</a
-              >
-            </td>
-          </tr>
-          <tr>
-            <td>Discord:</td>
-            <td>
-              <a
-                class="links"
-                href="https://discordapp.com/users/863041297123639316"
-                title="Discord"
-                target="_blank"
-                >Azasemey#9739</a
-              >
-            </td>
-          </tr>
-          <tr>
-            <td>Telegram:</td>
-            <td>
-              <a
-                class="links"
-                href="https://t.me/azasemey"
-                title="Telegram"
-                target="_blank"
-                >@azasemey</a
-              >
-            </td>
-          </tr>
-        </table>
-      </section>
-    </main>
-    <footer class="footer container">
-      <a href="https://rs.school/js/" target="_blank"
-        ><img src="img/rs_school_js.svg" alt="rs-logo" width="150"
-      /></a>
-      <span>2021</span>
-      <a
-        href="https://github.com/Azasemey/"
-        title="GitHub profile"
-        target="_blank"
-        >GitHub</a
-      >
-    </footer>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link
       rel="stylesheet"
       href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/styles/default.min.css"
@@ -306,6 +88,69 @@ function spinWords(string) {
         </g>
       </symbol>
     </svg>
+    <div class="burger">
+      <input type="checkbox" class="burger__checkbox" id="burger-toggle" />
+      <label for="burger-toggle" class="burger__button">
+        <span class="burger__icon">&nbsp;</span>
+      </label>
+      <div class="burger__background">&nbsp;</div>
+      <div class="burger__nav">
+        <div class="burger__nav-wrapper">
+          <div>
+            <h1>Azamat Molbayev</h1>
+            <p>Front-End Developer</p>
+            <div class="icons">
+              <a
+                href="https://github.com/Azasemey/"
+                class="social-link"
+                target="_blank"
+              >
+                <svg class="social-icon">
+                  <use xlink:href="#github"></use>
+                </svg>
+              </a>
+              <a
+                href="https://t.me/azasemey"
+                class="social-link"
+                target="_blank"
+              >
+                <svg class="social-icon">
+                  <use xlink:href="#telegram"></use>
+                </svg>
+              </a>
+              <a
+                href="https://discordapp.com/users/863041297123639316"
+                class="social-link"
+                target="_blank"
+              >
+                <svg class="social-icon">
+                  <use xlink:href="#discord"></use>
+                </svg>
+              </a>
+              <a
+                href="mailto:azasemey@gmail.com"
+                class="social-link"
+                target="_blank"
+              >
+                <svg class="social-icon">
+                  <use xlink:href="#email"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <nav class="nav">
+            <ul class="nav-links">
+              <li class="nav-link"><a href="#about">About Me</a></li>
+              <li class="nav-link"><a href="#skills">Skills</a></li>
+              <li class="nav-link"><a href="#lang">Languages</a></li>
+              <li class="nav-link"><a href="#projects">Projects</a></li>
+              <li class="nav-link"><a href="#code">Code</a></li>
+              <li class="nav-link"><a href="#contact">Contacts</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
     <main class="container">
       <header class="header">
         <img class="img-profile" src="img/avatar.jpg" alt="author" />
@@ -352,6 +197,7 @@ function spinWords(string) {
             <li class="nav-link"><a href="#about">About Me</a></li>
             <li class="nav-link"><a href="#skills">Skills</a></li>
             <li class="nav-link"><a href="#lang">Languages</a></li>
+            <li class="nav-link"><a href="#projects">Projects</a></li>
             <li class="nav-link"><a href="#code">Code</a></li>
             <li class="nav-link"><a href="#contact">Contacts</a></li>
           </ul>
@@ -359,7 +205,6 @@ function spinWords(string) {
       </header>
       <section class="main-content">
         <h2 class="main-titles" id="about">About Me</h2>
-        <!-- <p class="mail-text"> -->
         <p>
           Hi! My name is Azamat and my goal is to become a confident front-end
           developer.
@@ -370,7 +215,6 @@ function spinWords(string) {
           they do.
         </p>
         I'm spending all my spare time learning HTML / CSS / JS
-        <!-- </p> -->
         <hr />
         <h2 class="main-titles" id="skills">Skills</h2>
         <div class="skills-langs">
@@ -390,6 +234,14 @@ function spinWords(string) {
               <li><div class="progress pr-80">Advanced</div></li>
             </ul>
           </div>
+          <div class="mob-skills">
+            <ul>
+              <li><div class="progress pr-50">HTML / CSS / JS</div></li>
+              <li><div class="progress pr-85">Wordpress</div></li>
+              <li><div class="progress pr-90">Adobe Photoshop</div></li>
+              <li><div class="progress pr-80">Adobe Premiere</div></li>
+            </ul>
+          </div>
         </div>
         <hr />
         <h2 class="main-titles" id="lang">Languages</h2>
@@ -407,6 +259,58 @@ function spinWords(string) {
               <li><div class="progress pr-50">Intermediate</div></li>
               <li><div class="progress pr-80">Upper-Intermediate (B2)</div></li>
             </ul>
+          </div>
+          <div class="mob-skills">
+            <ul>
+              <li><div class="progress">Russian - Native</div></li>
+              <li><div class="progress pr-50">Kazakh - Intermediate</div></li>
+              <li>
+                <div class="progress pr-80">English - B2</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <h2 class="main-titles" id="projects">Projects</h2>
+        <div class="projects">
+          <div class="projects__box">
+            <a
+              href="https://rolling-scopes-school.github.io/azasemey-JSFEPRESCHOOL/museum"
+              target="_blank"
+              ><img
+                src="img/projects/museum.jpg"
+                alt="museum"
+                class="projects__box__image"
+              />
+              <br />
+              <span>Museum</span></a
+            >
+          </div>
+          <div class="projects__box">
+            <a
+              href="https://azasemey.github.io/custom-video-player/#"
+              target="_blank"
+              ><img
+                src="img/projects/player.jpg"
+                alt="player"
+                class="projects__box__image"
+              />
+              <br />
+              <span>Media Player</span></a
+            >
+          </div>
+          <div class="projects__box">
+            <a
+              href="https://rolling-scopes-school.github.io/azasemey-JSFEPRESCHOOL/vertical-slider/"
+              target="_blank"
+              ><img
+                src="img/projects/slider.jpg"
+                alt="museum"
+                class="projects__box__image"
+              />
+              <br />
+              <span>Infinite Slider</span></a
+            >
           </div>
         </div>
         <hr />
@@ -446,6 +350,7 @@ const generateColor = function () {
           </ul>
         </div>
         <hr />
+
         <footer class="footer">
           <div class="logo">
             <a href="https://rs.school/js/" class="f-link" target="_blank">
